@@ -3,19 +3,10 @@
 @import url("atmosphere.css");
 @import url("course.css");
 @import url("contact.css");
-/* Avoid Chrome to see Safari hack */
-@supports (-webkit-touch-callout: none) {
-  body {
-    /* The hack for Safari */
-    height: -webkit-fill-available;
-  }
-}
-
 body {
   font-family: 'Noto Sans JP', sans-serif;
   color: #1A1311;
   background-color: #fff;
-  height: 100vh;
 }
 
 a {
@@ -42,7 +33,8 @@ li {
 
 .top {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   position: relative;
 }
 
