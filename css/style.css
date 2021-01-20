@@ -515,6 +515,30 @@ li {
   }
 }
 
+.top__arrowFade, .top__newsFade {
+  -webkit-animation: fadeIn 2s ease 4s 1 normal forwards;
+          animation: fadeIn 2s ease 4s 1 normal forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .spnavi1 {
   width: 100%;
   height: 80px;
@@ -887,12 +911,6 @@ li {
   }
 }
 
-@media (max-height: 900px) {
-  .gnavi {
-    overflow-y: scroll;
-  }
-}
-
 .gnavi__fixed {
   position: fixed;
   top: 0;
@@ -921,7 +939,7 @@ li {
 
 .gnavi__item a {
   display: block;
-  padding: .5em 0 .5em 1em;
+  padding: 0.3em 0 .3em 1em;
   position: relative;
 }
 
@@ -955,11 +973,11 @@ li {
 
 .gnavi__lg {
   font-family: 'Permanent Marker', cursive;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .gnavi__sm {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .gnavi__linkIcon {
@@ -970,12 +988,12 @@ li {
 
 @media (min-width: 1200px) {
   .gnavi__linkIcon {
-    padding-left: 1.5em;
+    padding-left: 2.5em;
   }
 }
 
 .gnavi__linkIcon img {
-  width: 60px;
+  width: 50px;
   margin-top: .5em;
 }
 
@@ -992,7 +1010,7 @@ li {
   -webkit-filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
           filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
   width: 100%;
-  height: 60px;
+  height: 50px;
 }
 
 .gnavi__linkBg {
@@ -1005,11 +1023,11 @@ li {
 .gnavi__linkBg::before {
   content: "";
   position: absolute;
-  top: -15px;
+  top: -10px;
   bottom: 0;
   left: 0;
   width: 0;
-  height: 60px;
+  height: 50px;
   background-color: #1A1311;
   z-index: -1;
   -webkit-transition: .5s;
@@ -1017,11 +1035,11 @@ li {
 }
 
 .gnavi__btn {
-  padding: 1em 1.5em;
+  padding: 1em 2em;
 }
 
 .gnavi__text {
-  font-size: 28px;
+  font-size: 23px;
   color: #fff;
   margin: 0;
   letter-spacing: .16em;
@@ -1033,13 +1051,13 @@ li {
   margin: 0;
   -webkit-transition: .5s;
   transition: .5s;
-  height: 85px;
+  height: 60px;
 }
 
 .gnavi__box2 {
   position: absolute;
-  width: 135px;
-  height: 85px;
+  width: 115px;
+  height: 65px;
   top: 0;
   left: 0;
   z-index: 2;
@@ -1098,8 +1116,8 @@ li {
 
 .gnavi__box3 {
   position: absolute;
-  width: 135px;
-  height: 85px;
+  width: 115px;
+  height: 65px;
   border: 1px solid #1A1311;
   z-index: -3;
   top: 5px;
@@ -1351,6 +1369,7 @@ li {
   font-weight: bold;
   line-height: 2;
   padding: 3em .5em 0;
+  text-shadow: 2px 2px 2px #fff;
 }
 
 @media (min-width: 576px) {
@@ -1375,6 +1394,7 @@ li {
   font-size: 10px;
   padding: 2em 0;
   line-height: 2.3;
+  text-shadow: 1px 1px 1px #fff;
 }
 
 @media (min-width: 576px) {
@@ -1621,7 +1641,7 @@ li {
 
 @media (min-width: 992px) {
   .instructor__box {
-    padding: 3em 1em 1em 5em;
+    padding: 3em 3em 1em 3em;
     top: 15em;
   }
 }
@@ -2218,7 +2238,7 @@ li {
 .atmosphere {
   width: 100%;
   height: 500px;
-  background-image: url("../image/atmosphere_bg.png");
+  background-image: url("../image/Atmosphere.gif");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2241,7 +2261,7 @@ li {
 .atmosphere__title {
   z-index: 100;
   position: absolute;
-  top: 3.2em;
+  top: 3em;
   left: 0;
 }
 
@@ -2279,7 +2299,7 @@ li {
 
 @media (min-width: 992px) {
   .atmosphere__box {
-    padding: 3em 1em 1em 5em;
+    padding: 3em 3em 1em 3em;
     top: 15em;
   }
 }
